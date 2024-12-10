@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                            /* Define el nivel de compatibilidad de JavaScript */
+    "module": "CommonJS",                          /* Usa CommonJS para módulos */
+    "moduleResolution": "node",                    /* Resolución de módulos estilo Node.js */
+    "rootDir": "./",                               /* Raíz del proyecto */
+    "outDir": "./dist",                            /* Directorio de salida para archivos compilados */
+    "esModuleInterop": true,                       /* Soporte para importar CommonJS */
+    "forceConsistentCasingInFileNames": true,      /* Asegura consistencia en nombres de archivo */
+    "strict": true,                                /* Habilita verificaciones estrictas */
+    "skipLibCheck": true,                          /* Omite la verificación de archivos d.ts */
+    "resolveJsonModule": true                      /* Permite importar archivos JSON */
+  },
+  "include": ["**/*.ts"],                          /* Incluye todos los archivos .ts en el proyecto */
+  "exclude": ["node_modules", "dist"]             /* Excluye node_modules y el directorio de salida */
+}
