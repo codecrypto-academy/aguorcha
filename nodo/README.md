@@ -1,5 +1,5 @@
 ```bash
-docker run -d --rm \
+docker run --rm \
 -v ./pwd.txt:/p.txt \
 -v ./datos:/data \
 -p 5556:8545 \
@@ -16,3 +16,5 @@ ethereum/client-go:v1.13.15 \
 --http.api "admin,eth,debug,miner,net,txpool,personal,web3" \
 --http.corsdomain "*"
 ```
+
+Si no queremos que la terminal se quede bloqueada, añadir -d después de docker run
