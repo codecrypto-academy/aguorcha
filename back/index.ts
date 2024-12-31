@@ -2,7 +2,7 @@ import express from "express";
 import { Request, Response } from "express";
 import cors from 'cors';
 import { ethers } from "ethers";
-import fs from "fs";
+import fs from "fs/promises";
 
 // Carga las varibales de entorno
 require('dotenv').config();
@@ -51,7 +51,7 @@ app.get("/api/faucet/:address/:amount", async (req: Request, res: Response) => {
   const { address, amount } = req.params;
   const provider = new ethers.JsonRpcProvider(process.env.URL_NODO);
   const ruta = process.env.KEYSTORE_FILE as string;
-  const rutaData = fs.readFileSync(ruta, "utf8");
+  const rutaData = await fs.readFile(ruta, "utf8");
   const wallet = await ethers.Wallet.fromEncryptedJson(rutaData, process.env.KEYSTORE_PWD as string);
   const walletConnected = wallet.connect(provider);
   const tx = await walletConnected.sendTransaction({

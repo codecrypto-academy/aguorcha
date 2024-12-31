@@ -18,3 +18,22 @@ ethereum/client-go:v1.13.15 \
 ```
 
 Si no queremos que la terminal se quede bloqueada, añadir -d después de docker run
+
+Inicialización del nodo
+
+```bash
+  docker run \
+  -v ./genesis.json:/gen.json \
+  -v ./datos:/data ethereum/client-go:latest \
+  init --datadir /data /gen.json
+```
+
+Crear una cuenta nueva
+
+```bash
+  docker run \
+  -v ./pwd.txt:/p.txt \
+  -v ./datos:/data \
+  ethereum/client-go:latest \
+  account new --datadir /data --password /p.txt
+```
