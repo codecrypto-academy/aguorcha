@@ -456,6 +456,11 @@ open@^8.0.0:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
+oracledb@^6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/oracledb/-/oracledb-6.7.1.tgz#a014132257db91f8de11010fc89c917d53b7e1d6"
+  integrity sha512-dOXqgJ8re9kw5Nv9zLlljhBcjsGCUELDD/VEecQlXl2R8IMNxJqdceR+VeKS4gAyVNzq0MOz45lXOiC8OqG1qw==
+
 pg-cloudflare@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/pg-cloudflare/-/pg-cloudflare-1.1.1.tgz#e6d5833015b170e23ae819e8c5d7eaedb472ca98"
