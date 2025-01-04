@@ -1,0 +1,70 @@
+=============== Jan 4, 2025 (UTC) ===============
+11:39:38.395602 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:39:38.426281 db@open opening
+11:39:38.428099 version@stat F·[] S·0B[] Sc·[]
+11:39:38.438050 db@janitor F·2 G·0
+11:39:38.438175 db@open done T·11.709507ms
+11:39:38.552301 db@close closing
+11:39:38.552571 db@close done T·269.922µs
+=============== Jan 4, 2025 (UTC) ===============
+11:39:49.997059 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:39:49.999305 version@stat F·[] S·0B[] Sc·[]
+11:39:50.000019 db@open opening
+11:39:50.001229 journal@recovery F·1
+11:39:50.006325 journal@recovery recovering @1
+11:39:50.016686 memdb@flush created L0@2 N·16 S·1KiB "Hm\xe9..\xc0/\xac,v9":"\x8b\x8d3..R\xf2\x8c,v5"
+11:39:50.022551 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+11:39:50.058732 db@janitor F·3 G·0
+11:39:50.058904 db@open done T·58.433279ms
+11:42:14.189849 db@close closing
+11:42:14.190235 db@close done T·381.864µs
+=============== Jan 4, 2025 (UTC) ===============
+11:42:18.293788 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:42:18.295959 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+11:42:18.296122 db@open opening
+11:42:18.296468 journal@recovery F·1
+11:42:18.301525 journal@recovery recovering @3
+11:42:18.313357 memdb@flush created L0@5 N·306 S·15KiB "\v\x81\xce..\xe4\x97k,v320":"\x97\x11\xa9..@\"\xe9,v319"
+11:42:18.318019 version@stat F·[2] S·16KiB[16KiB] Sc·[0.50]
+11:42:18.359883 db@janitor F·4 G·0
+11:42:18.360029 db@open done T·63.828802ms
+=============== Jan 4, 2025 (UTC) ===============
+11:49:21.236365 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:49:21.269324 version@stat F·[2] S·16KiB[16KiB] Sc·[0.50]
+11:49:21.269647 db@open opening
+11:49:21.272001 journal@recovery F·1
+11:49:21.277857 journal@recovery recovering @6
+11:49:21.298975 memdb@flush created L0@8 N·2012 S·102KiB "H\x011..\x02xV,v2285":"unc..own,v326"
+11:49:21.305417 version@stat F·[3] S·119KiB[119KiB] Sc·[0.75]
+11:49:21.361019 db@janitor F·5 G·0
+11:49:21.361180 db@open done T·91.45998ms
+11:57:32.300816 db@close closing
+11:57:32.301332 db@close done T·513.026µs
+=============== Jan 4, 2025 (UTC) ===============
+11:57:43.526641 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:57:43.528429 version@stat F·[3] S·119KiB[119KiB] Sc·[0.75]
+11:57:43.528886 db@open opening
+11:57:43.530200 journal@recovery F·1
+11:57:43.534629 journal@recovery recovering @9
+11:57:43.549197 memdb@flush created L0@11 N·1495 S·83KiB "\x06}R..6}4,v3826":"\xf4ZH..X\x9dW,v3829"
+11:57:43.553130 version@stat F·[4] S·202KiB[202KiB] Sc·[1.00]
+11:57:43.605019 db@janitor F·6 G·0
+11:57:43.605158 db@open done T·76.013244ms
+11:57:43.605235 table@compaction L0·4 -> L1·0 S·202KiB Q·3833
+11:57:43.653523 table@build created L1@14 N·2384 S·153KiB "\x06}R..6}4,v3826":"\xf4ZH..X\x9dW,v3829"
+11:57:43.653962 version@stat F·[0 1] S·153KiB[0B 153KiB] Sc·[0.00 0.00]
+11:57:43.667993 table@compaction committed F-3 S-49KiB Ke·0 D·1445 T·62.639831ms
+11:57:43.669495 table@remove removed @8
+11:57:43.670837 table@remove removed @5
+11:57:43.671916 table@remove removed @2
+=============== Jan 4, 2025 (UTC) ===============
+11:59:59.173399 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:59:59.175801 version@stat F·[0 1] S·153KiB[0B 153KiB] Sc·[0.00 0.00]
+11:59:59.175975 db@open opening
+11:59:59.176538 journal@recovery F·1
+11:59:59.181256 journal@recovery recovering @12
+11:59:59.193370 memdb@flush created L0@15 N·86 S·4KiB "\x12\x96\xa6..\xe5ԇ,v3854":"\xf7Y\xcb..\x19\x88\xbf,v3891"
+11:59:59.200471 version@stat F·[1 1] S·157KiB[4KiB 153KiB] Sc·[0.25 0.00]
+11:59:59.241959 db@janitor F·5 G·1
+11:59:59.242085 db@janitor removing table-11
+11:59:59.242350 db@open done T·66.302317ms
