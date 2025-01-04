@@ -1,7 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const db = require("./db");
 
+app.use(cors());
 app.listen(5555);
 
 app.get("/ping", (req, res) => {
