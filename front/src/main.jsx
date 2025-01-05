@@ -9,7 +9,7 @@ import { Cesta } from "./components/Cesta";
 import "./index.css";
 
 const queryClient = new QueryClient();
-const Context = createContext(null);
+export const Context = createContext(null);
 
 function App() {
   const [estado, setEstado] = useState({
