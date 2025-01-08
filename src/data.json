@@ -11,5 +11,49 @@
         "url": "Http://youtube.com"
       }
     ]
-  }
+  },
+  "footer": [
+    {
+      "titulo": "Social",
+      "links": [
+        {
+          "titulo": "Youtube",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Twitter",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Instagram",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Facebook",
+          "url": "http://..."
+        }
+      ]
+    },
+    {
+      "titulo": "Help",
+      "links": [
+        {
+          "titulo": "Contact",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Email",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Privacy",
+          "url": "http://..."
+        },
+        {
+          "titulo": "Term and conditions",
+          "url": "http://..."
+        }
+      ]
+    }
+  ]
 }
