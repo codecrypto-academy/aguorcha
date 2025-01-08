@@ -1,5 +1,5 @@
 import { Header } from "./Header";
-import { Carrousel } from "./Carrousel";
+import { Carousel } from "./Carousel";
 import { Prices } from "./Prices";
 import { Footer } from "./Footer";
 
@@ -7,7 +7,7 @@ export function Home() {
   return (
     <div className="container">
       <Header></Header>
-      <Carrousel></Carrousel>
+      <Carousel></Carousel>
       <Prices></Prices>
       <Footer></Footer>
     </div>

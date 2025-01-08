@@ -12,6 +12,23 @@
       }
     ]
   },
+  "carrusel": [
+    {
+      "texto": "New service on the world",
+      "url": "/imagen1.png",
+      "alt": "texto alternativo imagen"
+    },
+    {
+      "texto": "We offer six months free",
+      "url": "/imagen2.png",
+      "alt": "texto alternativo imagen"
+    },
+    {
+      "texto": "New features",
+      "url": "/imagen3.png",
+      "alt": "texto alternativo imagen"
+    }
+  ],
   "precios": [
     {
       "titulo": "free",

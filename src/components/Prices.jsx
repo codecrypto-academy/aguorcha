@@ -24,7 +24,7 @@ function CardPrice({ data }) {
 
 export function Prices() {
   return (
-    <div className="my-8 d-flex justify-content-between">
+    <div className="my-4 d-flex justify-content-between">
       {data.precios.map((i, index) => (
         <CardPrice data={i} key={index}></CardPrice>
       ))}
