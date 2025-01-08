@@ -12,6 +12,44 @@
       }
     ]
   },
+  "precios": [
+    {
+      "titulo": "free",
+      "precio": "$0",
+      "por": "month",
+      "textBoton": "Sign up for free",
+      "features": [
+        "10 users included",
+        "2GB ",
+        "Email",
+        "Help Center cripto"
+      ]
+    },
+    {
+      "titulo": "pro",
+      "precio": "$15",
+      "por": "month",
+      "textBoton": "Sign up for free",
+      "features": [
+        "20 users included",
+        "10GB ",
+        "Priority Email",
+        "Help Center"
+      ]
+    },
+    {
+      "titulo": "enterprise",
+      "precio": "$25",
+      "por": "month",
+      "textBoton": "Sign up for free",
+      "features": [
+        "30 users included",
+        "15GB ",
+        "Phone Support",
+        "Help Center access"
+      ]
+    }
+  ],
   "footer": [
     {
       "titulo": "Social",
