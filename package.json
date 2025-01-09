@@ -1,0 +1,8 @@
+{
+  "name": "web2.5-cripto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/codecrypto-academy/aguorcha.git",
+  "author": "Agu Orcha <aguorcha@gmail.com>",
+  "license": "MIT"
+}
