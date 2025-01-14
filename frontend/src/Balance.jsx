@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export function Balance() {
-  return <div>Balance</div>;
+  const params = useParams();
+
+  return <div>Balance {params.address}</div>;
 }

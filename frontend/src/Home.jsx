@@ -1,10 +1,19 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 export function Home() {
+  const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const submitForm = (data) => {
-    console.log(data);
+    if (data.data.length == 66) {
+      navigate(`tx/${data.data}`);
+    }
+    if (data.data.length == 42) {
+      navigate(`balance/${data.data}`);
+    }
+    if (/^\d+\.?\d*$/.test(data.data)) {
+      navigate(`bloque/${data.data}`);
+    }
   };
 
   return (

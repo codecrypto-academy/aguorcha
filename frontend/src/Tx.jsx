@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export function Tx() {
-  return <div>Tx</div>;
+  const params = useParams();
+
+  return <div>Tx {params.tx}</div>;
 }

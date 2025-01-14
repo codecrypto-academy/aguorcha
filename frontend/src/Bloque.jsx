@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export function Bloque() {
-  return <div>Bloque</div>;
+  const params = useParams();
+
+  return <div>Bloque {params.bloque}</div>;
 }
