@@ -1,8 +1,11 @@
 const express = require("express");
 const { Web3 } = require("web3");
+const cors = require('cors');
 require('dotenv').config();
+
 const app = express();
 const web3 = new Web3(process.env.URL_INFURA);
+app.use(cors());
 
 app.get("/", async (req, res) => {
   const bloque = await web3.eth.getBlockNumber();
@@ -10,21 +13,33 @@ app.get("/", async (req, res) => {
 })
 
 app.get("/bloque/:bloque", async (req, res) => {
-  const bloque = await web3.eth.getBlock(req.params.bloque);
-  res.send(bloque);
+  try {
+    const bloque = await web3.eth.getBlock(req.params.bloque);
+    res.send(bloque);
+  } catch (error) {
+    res.status(500).send({ mensaje: error.message })
+  }
 })
 
 app.get("/tx/:tx", async (req, res) => {
-  const tx = await web3.eth.getTransaction(req.params.tx);
-  res.send(tx);
+  try {
+    const tx = await web3.eth.getTransaction(req.params.tx);
+    res.send(tx);
+  } catch (error) {
+    res.status(500).send({ mensaje: error.message })
+  }
 })
 
 app.get("/balance/:address", async (req, res) => {
-  const balance = await web3.eth.getBalance(req.params.address);
-  res.send({
-    balance,
-    ethers: web3.utils.fromWei(balance, 'ether')
-  });
+  try {
+    const balance = await web3.eth.getBalance(req.params.address);
+    res.send({
+      balance,
+      ethers: web3.utils.fromWei(balance, 'ether')
+    });
+  } catch (error) {
+    res.status(500).send({ mensaje: error.message })
+  }
 })
 
 BigInt.prototype.toJSON = function () {
