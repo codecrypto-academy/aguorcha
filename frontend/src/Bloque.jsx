@@ -34,10 +34,7 @@ export function Bloque() {
           ))}
         </tbody>
       </table>
-      <pre>
-        {JSON.stringify(data.transactions)}
-        {JSON.stringify(data, null, 2)}
-      </pre>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   );
 }
