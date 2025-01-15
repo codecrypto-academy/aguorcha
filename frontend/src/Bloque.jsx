@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useQuery } from "react-query";
 import { getBlock } from "./api";
 
@@ -18,7 +18,26 @@ export function Bloque() {
 
   return (
     <div>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Lista de transacciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.transactions.map((item, index) => (
+            <tr key={index}>
+              <td>
+                <Link to={`/tx/${item}`}>{item}</Link>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <pre>
+        {JSON.stringify(data.transactions)}
+        {JSON.stringify(data, null, 2)}
+      </pre>
     </div>
   );
 }

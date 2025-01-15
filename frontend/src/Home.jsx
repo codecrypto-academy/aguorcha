@@ -18,14 +18,20 @@ export function Home() {
 
   return (
     <div className="container">
-      <h3>Explorador de la Blockchain Ethereum</h3>
+      <h3 className="text-center">Explorador de la Blockchain Ethereum</h3>
 
-      <form onSubmit={handleSubmit(submitForm)} action="">
-        <input {...register("data")} />
+      <form
+        className="d-flex justify-content-center gap-1"
+        onSubmit={handleSubmit(submitForm)}
+        action=""
+      >
+        <input {...register("data")} size={70} />
         <button className="btn btn-primary">GO</button>
       </form>
 
-      <Outlet />
+      <div className="border my-3 p-2">
+        <Outlet />
+      </div>
     </div>
   );
 }
