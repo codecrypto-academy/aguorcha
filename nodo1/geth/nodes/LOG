@@ -1,0 +1,35 @@
+=============== Feb 3, 2025 (CET) ===============
+12:42:43.926231 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:42:43.962746 db@open opening
+12:42:43.964071 version@stat F·[] S·0B[] Sc·[]
+12:42:43.973327 db@janitor F·2 G·0
+12:42:43.973417 db@open done T·10.621163ms
+12:48:10.096349 db@close closing
+12:48:10.096472 db@close done T·120.511µs
+=============== Feb 3, 2025 (CET) ===============
+12:58:23.777747 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:58:23.777931 version@stat F·[] S·0B[] Sc·[]
+12:58:23.777954 db@open opening
+12:58:23.778003 journal@recovery F·1
+12:58:23.780209 journal@recovery recovering @1
+12:58:23.796528 memdb@flush created L0@2 N·1095 S·22KiB "loc..seq,v19":"version,v1"
+12:58:23.799421 version@stat F·[1] S·22KiB[22KiB] Sc·[0.25]
+12:58:23.837245 db@janitor F·3 G·0
+12:58:23.837296 db@open done T·59.329326ms
+13:41:59.849007 db@close closing
+13:41:59.849226 db@close done T·215.642µs
+=============== Feb 5, 2025 (CET) ===============
+13:12:37.297262 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:12:37.297785 version@stat F·[1] S·22KiB[22KiB] Sc·[0.25]
+13:12:37.297807 db@open opening
+13:12:37.297851 journal@recovery F·1
+13:12:37.298418 journal@recovery recovering @3
+13:12:37.355573 memdb@flush created L0@5 N·22439 S·410KiB "loc..seq,v1114":"n:\xff..ong,v1166"
+13:12:37.357080 version@stat F·[2] S·433KiB[433KiB] Sc·[0.50]
+13:12:37.607578 db@janitor F·4 G·0
+13:12:37.607592 db@open done T·309.7783ms
+13:12:37.611974 table@compaction L0·2 -> L1·0 S·433KiB Q·23537
+13:12:37.646676 table@build created L1@8 N·5036 S·167KiB "loc..seq,v1114":"version,v1"
+13:12:37.646738 version@stat F·[0 1] S·167KiB[0B 167KiB] Sc·[0.00 0.00]
+13:12:37.685869 table@compaction committed F-1 S-265KiB Ke·0 D·18498 T·73.860106ms
+13:12:37.686020 table@remove removed @2
