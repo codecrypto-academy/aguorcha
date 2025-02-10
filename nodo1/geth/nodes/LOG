@@ -1,35 +1,35 @@
-=============== Feb 3, 2025 (CET) ===============
-12:42:43.926231 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-12:42:43.962746 db@open opening
-12:42:43.964071 version@stat F·[] S·0B[] Sc·[]
-12:42:43.973327 db@janitor F·2 G·0
-12:42:43.973417 db@open done T·10.621163ms
-12:48:10.096349 db@close closing
-12:48:10.096472 db@close done T·120.511µs
-=============== Feb 3, 2025 (CET) ===============
-12:58:23.777747 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-12:58:23.777931 version@stat F·[] S·0B[] Sc·[]
-12:58:23.777954 db@open opening
-12:58:23.778003 journal@recovery F·1
-12:58:23.780209 journal@recovery recovering @1
-12:58:23.796528 memdb@flush created L0@2 N·1095 S·22KiB "loc..seq,v19":"version,v1"
-12:58:23.799421 version@stat F·[1] S·22KiB[22KiB] Sc·[0.25]
-12:58:23.837245 db@janitor F·3 G·0
-12:58:23.837296 db@open done T·59.329326ms
-13:41:59.849007 db@close closing
-13:41:59.849226 db@close done T·215.642µs
-=============== Feb 5, 2025 (CET) ===============
-13:12:37.297262 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-13:12:37.297785 version@stat F·[1] S·22KiB[22KiB] Sc·[0.25]
-13:12:37.297807 db@open opening
-13:12:37.297851 journal@recovery F·1
-13:12:37.298418 journal@recovery recovering @3
-13:12:37.355573 memdb@flush created L0@5 N·22439 S·410KiB "loc..seq,v1114":"n:\xff..ong,v1166"
-13:12:37.357080 version@stat F·[2] S·433KiB[433KiB] Sc·[0.50]
-13:12:37.607578 db@janitor F·4 G·0
-13:12:37.607592 db@open done T·309.7783ms
-13:12:37.611974 table@compaction L0·2 -> L1·0 S·433KiB Q·23537
-13:12:37.646676 table@build created L1@8 N·5036 S·167KiB "loc..seq,v1114":"version,v1"
-13:12:37.646738 version@stat F·[0 1] S·167KiB[0B 167KiB] Sc·[0.00 0.00]
-13:12:37.685869 table@compaction committed F-1 S-265KiB Ke·0 D·18498 T·73.860106ms
-13:12:37.686020 table@remove removed @2
+=============== Feb 10, 2025 (CET) ===============
+12:28:31.918940 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:28:31.948737 db@open opening
+12:28:31.951093 version@stat F·[] S·0B[] Sc·[]
+12:28:31.960527 db@janitor F·2 G·0
+12:28:31.960628 db@open done T·11.803564ms
+12:38:32.265008 db@close closing
+12:38:32.268273 db@close done T·3.291358ms
+=============== Feb 10, 2025 (CET) ===============
+12:41:24.706216 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:41:24.710736 version@stat F·[] S·0B[] Sc·[]
+12:41:24.710773 db@open opening
+12:41:24.710834 journal@recovery F·1
+12:41:24.712568 journal@recovery recovering @1
+12:41:24.724954 memdb@flush created L0@2 N·3023 S·74KiB "loc..seq,v23":"version,v1"
+12:41:24.726781 version@stat F·[1] S·74KiB[74KiB] Sc·[0.25]
+12:41:24.758954 db@janitor F·3 G·0
+12:41:24.758999 db@open done T·48.214767ms
+13:02:20.271583 db@close closing
+13:02:20.271704 db@close done T·119.83µs
+=============== Feb 10, 2025 (CET) ===============
+13:03:20.703048 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:03:20.703186 version@stat F·[1] S·74KiB[74KiB] Sc·[0.25]
+13:03:20.703198 db@open opening
+13:03:20.703226 journal@recovery F·1
+13:03:20.703983 journal@recovery recovering @3
+13:03:20.724554 memdb@flush created L0@5 N·10222 S·195KiB "loc..seq,v3045":"n:\xff..ong,v3120"
+13:03:20.726086 version@stat F·[2] S·269KiB[269KiB] Sc·[0.50]
+13:03:20.781293 db@janitor F·4 G·0
+13:03:20.781331 db@open done T·78.125613ms
+13:03:20.788103 table@compaction L0·2 -> L1·0 S·269KiB Q·13248
+13:03:20.815515 table@build created L1@8 N·3105 S·112KiB "loc..seq,v3045":"version,v1"
+13:03:20.815666 version@stat F·[0 1] S·112KiB[0B 112KiB] Sc·[0.00 0.00]
+13:03:20.831789 table@compaction committed F-1 S-156KiB Ke·0 D·10140 T·43.57531ms
+13:03:20.831980 table@remove removed @2
