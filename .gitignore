@@ -1,1 +1,13 @@
 .vscode
+
+network/istio*
+
+chaincode/keystore/
+chaincode/*.t*
+chaincode/connection.json
+chaincode/metadata.json
+
+*/.env*
+
+*/node_modules/
+*/dist/
