@@ -1,4 +1,4 @@
 .vscode
 
-products-chaincode/node_modules/
-products-chaincode/dist/
+*/node_modules/
+*/dist/
